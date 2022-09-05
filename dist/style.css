@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800);
 body {
-  background-color: #f5f5f5;
+  background-color: gray;
   padding: 120px 0;
   font-family: "Open Sans", sans-serif;
 }
@@ -26,7 +26,7 @@ img {
   z-index: -1 !important;
   width: 95%;
   height: 12px;
-  background: #FCC1C5;
+  background: black;
   bottom: 0;
   left: 0;
   right: 0;
@@ -58,7 +58,7 @@ img {
   display: block;
   border-radius: 100%;
   margin: -120px auto 0;
-  box-shadow: 0 0 0 5px #FCC1C5;
+  box-shadow: 0 0 0 5px black;
 }
 
 .profile-card header .pic img {
@@ -135,45 +135,45 @@ img {
 /*animation hover effect*/
 @-webkit-keyframes bounceOut {
   0% {
-    box-shadow: 0 0 0 4px #FCC1C5;
+    box-shadow: 0 0 0 4px black;
     opacity: 1;
   }
   25% {
-    box-shadow: 0 0 0 1px #FCC1C5;
+    box-shadow: 0 0 0 1px black;
     opacity: 1;
   }
   50% {
-    box-shadow: 0 0 0 7px #FCC1C5;
+    box-shadow: 0 0 0 7px black;
     opacity: 1;
   }
   75% {
-    box-shadow: 0 0 0 4px #FCC1C5;
+    box-shadow: 0 0 0 4px black;
     opacity: 1;
   }
   100% {
-    box-shadow: 0 0 0 5px #FCC1C5;
+    box-shadow: 0 0 0 5px black;
     opacity: 1;
   }
 }
 @keyframes bounceOut {
   0% {
-    box-shadow: 0 0 0 6px #FCC1C5;
+    box-shadow: 0 0 0 6px black;
     opacity: 1;
   }
   25% {
-    box-shadow: 0 0 0 2px #FCC1C5;
+    box-shadow: 0 0 0 2px black;
     opacity: 1;
   }
   50% {
-    box-shadow: 0 0 0 9px #FCC1C5;
+    box-shadow: 0 0 0 9px black;
     opacity: 1;
   }
   75% {
-    box-shadow: 0 0 0 3px #FCC1C5;
+    box-shadow: 0 0 0 3px black;
     opacity: 1;
   }
   100% {
-    box-shadow: 0 0 0 5px #FCC1C5;
+    box-shadow: 0 0 0 5px black;
     opacity: 1;
   }
 }
