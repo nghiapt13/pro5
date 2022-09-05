@@ -60,10 +60,19 @@
     <!-- add or remove social profiles as you see fit -->
 
   </ul>
-
+  <button onclick="dark()" class="btn-23">
+    <span class="text">Dark</span>
+    <span class="marquee" aria-hidden>Dark</span>
+  </button>
+  
 </aside>
 <!-- that’s all folks! -->
 <!-- partial -->
-  
+  <script>
+    function dark(){
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
