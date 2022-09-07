@@ -37,6 +37,10 @@ img {
   opacity: 0;
   transition: all 400ms ease-in;
 }
+.dark-mode .mask-shadow{
+  background: #FCC1C5;
+  transition: 0.3s ease-in;
+}
 
 .profile-card:hover {
   box-shadow: 0px 30px 60px -5px rgba(55, 55, 71, 0.3);
@@ -60,6 +64,11 @@ img {
   border-radius: 100%;
   margin: -120px auto 0;
   box-shadow: 0 0 0 5px black;
+  transition: 0.3s ease-in;
+}
+.dark-mode .profile-card header .pic{
+  box-shadow: 0 0 0 5px #FCC1C5;
+  transition: 0.3s ease-in;
 }
 
 .profile-card header .pic img {
@@ -178,12 +187,61 @@ img {
     opacity: 1;
   }
 }
+/* keyframes when dark mode */
+@-webkit-keyframes darkbounceOut {
+  0% {
+    box-shadow: 0 0 0 4px #FCC1C5;
+    opacity: 1;
+  }
+  25% {
+    box-shadow: 0 0 0 1px #FCC1C5;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 7px #FCC1C5;
+    opacity: 1;
+  }
+  75% {
+    box-shadow: 0 0 0 4px #FCC1C5;
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 0 5px #FCC1C5;
+    opacity: 1;
+  }
+}
+@keyframes darkbounceOut {
+  0% {
+    box-shadow: 0 0 0 6px #FCC1C5;
+    opacity: 1;
+  }
+  25% {
+    box-shadow: 0 0 0 2px #FCC1C5;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 9px #FCC1C5;
+    opacity: 1;
+  }
+  75% {
+    box-shadow: 0 0 0 3px #FCC1C5;
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 0 5px #FCC1C5;
+    opacity: 1;
+  }
+}
+
+
 .dark-mode{
   background-color: black;
   color: white;
   transition: 0.3s ease-out;
 }
-
+.dark-mode .profile-card:hover header .pic, .profile-card header .pic:hover {
+animation: darkbounceOut 0.3s linear;
+}
 /* button */
 .btn-23,
 .btn-23 *,
