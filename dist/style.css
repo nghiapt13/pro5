@@ -239,9 +239,13 @@ img {
   color: white;
   transition: 0.3s ease-out;
 }
-.dark-mode .profile-card:hover header .pic, .profile-card header .pic:hover {
+.dark-mode .profile-card:hover header .pic{
 animation: darkbounceOut 0.3s linear;
 }
+
+.profile-card header .pic:hover {
+  /* animation: darkbounceOut 0.3s linear; */
+  }
 /* button */
 .btn-23,
 .btn-23 *,
